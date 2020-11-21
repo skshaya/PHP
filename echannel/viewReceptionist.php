@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>| ABC E-Channel |</title>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/adminStyle.css">
+        <link rel="stylesheet" href="css/doctorPageStyle.css">
+
+    </head>
+    <body>
+        <?php include 'navBar.php'; ?>
+        <div class="container">
+            <?php include 'subNavAdmin.php'; ?>
+            <hr>
+            <br>
+
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <form id="searchReceptionistForm"> 
+                        <h3 class="text text-primary" style="text-align: center">List of Receptionists</h3><br>
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col-md-10 mb-3"><input type="text" class="form-control" placeholder="Type the Doctor's Name Here..."></div>
+                                <div class="col-md-2"><button type="submit" class="btn btn-outline-success">Search</button></div>
+                            </div>
+                        </div>
+                    </form> 
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Specialization</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Contact No</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Username</th>
+                                <th scope="col">Availablity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>Mark</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>Mark</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>Mark</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                            </tr>
+                        </tbody>
+                    </table>                  
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

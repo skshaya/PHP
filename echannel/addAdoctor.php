@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>| ABC E-Channel |</title>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/adminStyle.css">
+        <link rel="stylesheet" href="css/doctorPageStyle.css">
+
+    </head>
+    <body>
+        <?php include 'navBar.php'; ?>
+        <div class="container">
+            <?php include 'subNavAdmin.php'; ?>
+            <hr>
+            <br>
+
+            <div class="row">
+                
+                <div class="col-md-8 col-lg-8">
+                    <form id="AddDoctorForm" class="needs-validation" novalidate>
+                        <h3 class="text text-primary" style="text-align: center">Add a Doctor</h3><br>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom01"><strong>First name</strong></label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom02"><strong>Last name</strong></label>
+                                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom02"><strong>Select Specialization</strong></label>
+                                <div class="input-group">
+                                    <select class="form-control" id="exampleFormControlSelect1" id="validationCustom03" >
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please choose a Specialization.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid Email.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom01">Username</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Username"  required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid Username.
+                                </div>                                    
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password" data-toggle="password" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid Password.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" name="radio-stacked" required >
+                                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                                    <label class="invalid-feedback" for="inlineRadio1">Select on of the Option</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" name="radio-stacked" required>
+                                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                                    <label class="invalid-feedback" for="inlineRadio2">Select on of the Option</label>
+                                </div>
+                            </div>                            
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                                <label for="validationCustom03"><strong>Address Line 1</strong></label>
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="Address Line 1" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid Address.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                                <label for="validationCustom03"><strong>Address Line 2</strong></label>
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="Address Line 2" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid Address.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                                <label for="validationCustom03"><strong>city</strong></label>
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="city" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                                <label for="validationCustom03"><strong>Contact Number</strong></label>
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="Contact Number" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid Contact Number.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="validationCustom04"><strong>Available Day(s)</strong></label> <br>
+                            <div class="form-check">                                
+                                <div class="form-row">                                    
+                                    <div class="col-md-12">                                        
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                            Monday
+                                        </label>
+                                        <br>
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                            Tuesday
+                                        </label>
+                                        <br>
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                            Wednesday
+                                        </label>
+                                        <br>
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                            Thursday
+                                        </label>
+                                        <br>
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                            Friday
+                                        </label>
+                                        <br>
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                            Saturday
+                                        </label>
+                                        <br>
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                            Sunday
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            You must Select Available Day.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </form>                   
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <img id="dctrimg" src="img/doctor.png">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+    <script type="text/javascript">
+        $("#password").password('toggle');
+    </script>
+
+</body>
+</html>
